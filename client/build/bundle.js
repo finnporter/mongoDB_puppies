@@ -87,11 +87,11 @@ PuppyView.prototype = {
       var img = document.createElement('img');
 
       img.src = puppy.url;
-      text.innerText = puppy.name + ": " + '"' + puppy.breed + '"';
-      
+      text.innerText = puppy.name + ' is a(n) ' + puppy.breed;
+
       li.appendChild(text);
       ul.appendChild(li);
-      ul.apppendChild(img);
+      ul.appendChild(img);
     })
   }
 }
