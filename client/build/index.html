@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Puppies!</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="bundle.js"></script>
+</head>
+<body>
+<div class="container">
+<form action="/puppies", method="POST">
+  <input type="text" placeholder="name" name="name">
+  <input type="text" placeholder="breed" name="breed">
+  <input type="text" placeholder="image URL" name="url">
+  <button type="submit">Submit</button>
+</form>
+<form action="/delete" method="POST">
+<button id="deleteButton" type="submit">Delete All</button>
+</form>
+</div>
+<div class="image_container">
+<!-- <img src="/puppies"> -->
+</div>
+<div class="list-container">
+<ul id="puppies">
+</ul>
+</div>
+</body>
+</html>
